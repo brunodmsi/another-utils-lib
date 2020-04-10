@@ -3,7 +3,7 @@
  * @param {string} value CNPJ value
  * @returns {boolean} Returns whether the CNPJ is valid or not
  */
-function validateCNPJ(value: string): boolean {
+function validate(value: string): boolean {
   if (typeof value !== 'string') return false;
 
   let cnpj = value.replace(/[^0-9]/g, '');
@@ -41,4 +41,4 @@ function validateCNPJ(value: string): boolean {
 	return Number(cnpj.charAt(13)) == (rest < 2 ? 0 : 11 - rest);
 }
 
-export { validateCNPJ };
+export { validate };
