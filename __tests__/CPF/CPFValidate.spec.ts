@@ -1,8 +1,5 @@
 import validateCPF from '../../lib/br/CPF/CPFValidator';
 
-const spy = jest.spyOn(console, 'warn');
-const WARN_MESSAGE = 'Invalid value';
-
 describe('Validate CPF', () => {
   describe('Number', () => {
     it('should return true to a valid CPF', () => {
@@ -77,40 +74,6 @@ describe('Validate CPF', () => {
 
     it('2 > 1', () => {
       expect(validateCPF('855.178.021-25')).toBeTruthy()
-    })
-  })
-  describe('No values', () => {
-    // it('should return undefined to true', () => {
-    //   expect(validateCPF(true)).toBeFalsy()
-    //   expect(spy).toHaveBeenCalledWith(WARN_MESSAGE)
-    // })
-
-    // it('should return undefined to false', () => {
-    //   expect(validateCPF(false)).toBeFalsy()
-    //   expect(spy).toHaveBeenCalledWith(WARN_MESSAGE)
-    // })
-
-    it('should return undefined to null', () => {
-      expect(validateCPF(null)).toBeFalsy()
-      expect(spy).toHaveBeenCalledWith(WARN_MESSAGE)
-    })
-
-    it('should return undefined to undefined', () => {
-      expect(validateCPF(undefined)).toBeFalsy()
-      expect(spy).toHaveBeenCalledWith(WARN_MESSAGE)
-    })
-
-    it('should return undefined to an empty string', () => {
-      expect(validateCPF('')).toBeFalsy()
-    })
-
-    // it('should return undefined to no parameters', () => {
-    //   expect(validateCPF()).toBeFalsy()
-    //   expect(spy).toHaveBeenCalledWith(WARN_MESSAGE)
-    // })
-
-    it('should return undefined to NaN', () => {
-      expect(validateCPF(NaN)).toBeFalsy()
     })
   })
 });
