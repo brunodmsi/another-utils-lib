@@ -3,11 +3,30 @@ This package was born with the plan of solving only one mans problem (the author
 
 Feel free to use, star, fork, make pull requests, appoint issues, and all that sort of stuff.
 
+## Summary
+- [Installation](#installation)
+- [Documentation](#documentation)
+  - [BR (Brazilian Utils)](#br-brazilian-utils)
+    - [CPF](#cpf)
+      - [Generate CPF](#generate-cpf)
+      - [Validate CPF](#validate-cpf)
+      - [Format CPF](#format-cpf)
+      - [Format options](#format-options)
+    - [CNPJ](#cnpj)
+      - [Validate CNPJ](#validate-cnpj)
+  - [E-mail](#e-mail)
+    - [Validate e-mail](#validate-e-mail)
+- [Contribution guidelines](#contribution-guidelines)
+- [License](#license)
+
+
 ## Installation
-With `npm`:
-`npm install another-utils-lib --save`
-Or if you're using `yarn`:
-`yarn add another-utils-lib`
+With `npm`    
+`npm install another-utils-lib --save`    
+      
+Or if you're using `yarn`     
+`yarn add another-utils-lib`     
+     
 in the following you'll see the library documentation.
 
 ## Documentation
@@ -17,9 +36,11 @@ API References for the package.
 ```javascript
 const utils = require('another-utils-lib/br');
 ```
-#### CPF
+On this part you can find utilities for CPF, CNPJ (as listed below)   
 
-##### Generate CPF
+### CPF
+
+#### Generate CPF
 ```javascript
 const { CPF } = require('another-utils-lib/br');
 
@@ -27,7 +48,7 @@ CPF.generate([formatOption]);
 ```
 Check [format options](#format-options).
 
-##### Validate CPF
+#### Validate CPF
 ```javascript
 const { CPF } = require('another-utils-lib/br');
 
@@ -35,7 +56,7 @@ CPF.validate('123.456.789-01');
 ```
 **Note:** characters like `.`, `-`, and `space` are allowed.
 
-##### Format CPF
+#### Format CPF
 ```javascript
 const { CPF } = require('another-utils-lib/br');
 
@@ -43,7 +64,7 @@ CPF.format('123.456.789-01', [formatOption]);
 ```
 Check [format options](#format-options).
 
-##### Format options
+#### Format options
 
 - **Default**
 ```javascript
@@ -69,9 +90,9 @@ CPF.format('123.456.789-01', 'checker');
 ```
 Returns a CPF with the format XXXXXXXXX-XX
 
-#### CNPJ
+### CNPJ
 
-##### Validate CNPJ
+#### Validate CNPJ
 ```javascript
 const { CNPJ } = require('another-utils-lib/br');
 
