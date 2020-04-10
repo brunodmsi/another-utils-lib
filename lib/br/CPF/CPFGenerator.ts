@@ -3,6 +3,12 @@ import { formatCPF } from './CPFFormatter';
 
 import { formatOptions } from '../@types/CPF';
 
+
+/**
+ * Generates a random CPF
+ * @param {string|null} formatOption nullable - sets the CPF formatting
+ * @returns {string} Returns the random CPF with the set formatting option
+ */
 function generate(formatOption?: formatOptions): string {
   let firstNineDigits = '';
 

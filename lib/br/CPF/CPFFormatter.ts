@@ -37,6 +37,12 @@ export function formatCPF(
   );
 }
 
+/**
+ * Format the CPF
+ * @param {string} value CPF value
+ * @param {string|null} formatOption nullable - sets the CPF formatting
+ * @returns {string|void} Returns the formatted CPF, or a error
+ */
 function format(
   value: string | number,
   formatOption?: formatOptions

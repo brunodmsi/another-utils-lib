@@ -1,7 +1,7 @@
 import { calculateFirstChecker, calculateSecondChecker } from './Checker';
 
 /**
- * validate if CPF is valid or not
+ * Validate if CPF is valid or not
  * @param {string|number} value CPF value
  * @return {boolean} if it's valid, returns true, otherwise, returns false
  */
