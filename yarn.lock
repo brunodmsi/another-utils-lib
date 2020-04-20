@@ -1213,6 +1213,15 @@ ajv@^6.10.0, ajv@^6.10.2, ajv@^6.5.5:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
+another-utils-lib@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/another-utils-lib/-/another-utils-lib-1.0.0.tgz#3f8be1a8eb0a5453fb1a4de3210a8e604cb24bc6"
+  integrity sha512-ipLrcW4yxI9Z4WxFOMlUtcWXFia7ulV9UqLijGHKyKHD5i50CR5dugUd5GIESKYYkLJSN8/fMHYygM+HM2xOQw==
+  dependencies:
+    "@types/node" "^13.11.1"
+    tsc "^1.20150623.0"
+    typescript "^3.8.3"
+
 ansi-escapes@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-3.2.0.tgz#8780b98ff9dbf5638152d1f1fe5c1d7b4442976b"

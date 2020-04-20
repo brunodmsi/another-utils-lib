@@ -1,8 +1,13 @@
 {
   "name": "another-utils-lib",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "author": "Bruno De Masi",
+  "description": "This package was born with the plan of solving only one mans problem (the author), but it can, of course, be of your interest.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "license": "MIT",
   "prepublish": "tsc",
   "scripts": {
@@ -11,6 +16,7 @@
   },
   "dependencies": {
     "@types/node": "^13.11.1",
+    "another-utils-lib": "^1.0.0",
     "tsc": "^1.20150623.0",
     "typescript": "^3.8.3"
   },
